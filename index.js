@@ -28,3 +28,9 @@ app.use("/",(req,res)=>{
     })
 });
 
+//Publicar ruta Detalles
+app.use("/detalles",(req,res)=>{
+    res.render("Detalles",{
+        layout: "Detalles"
+    })
+});

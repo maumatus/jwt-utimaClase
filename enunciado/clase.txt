@@ -1,0 +1,28 @@
+//Mauricio
+Crear proyecto en local y subir a GIT
+Implementar Handlebars
+Implementar Bootstrap y Jquery
+
+
+//Claudio
+Crear tabla de usuarios
+Crear tabla de posts
+Crear script consultas js y Configurar conexión a BD.
+Crear Formulario de Login
+
+//Francisco
+Crear ruta API para autenticar
+Enlazar la ruta api con el formulario de Login
+
+
+//Pedro
+Crear ruta API que devuelva el listado de posts (Debe mostrar sólo los posts del usuario autenticado)
+Crear listado de posts (FRONTEND)
+
+
+Crear API de registro de post (Debe identificar el usuario conectado para asociarlo al post)
+Crear fomulario de posts (FRONTEND)
+
+
+
+

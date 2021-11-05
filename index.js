@@ -19,7 +19,7 @@ app.engine(
 //Middleware apra Jquery y Bootstrap
 app.use("/bootstrap", express.static(__dirname + '/node_modules/bootstrap/dist/'))
 app.use("/jquery", express.static(__dirname + '/node_modules/jquery/dist/'))
-
+app.use("/public", express.static(__dirname + '/public/'))
 
 //Publicar ruta base
 app.use("/",(req,res)=>{

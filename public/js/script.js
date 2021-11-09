@@ -24,6 +24,17 @@ $(() => {
         document.location = '/'
     })
 
+    $("#btn-verify").on("click", function(){
+        let notSelected = $(".verify").not(":checked")
+        let arreglo= []
+        //console.log(notSelected)
+        for (let index = 0; index < notSelected.length; index++) {
+            let element = notSelected[index] 
+            arreglo.push($(element).attr('data-id'))
+        }
+        console.log(arreglo)
+    })
+
     $("#btn-save").on("click", function(){
         let titulo = $("#txt-titulo").val();
         let cuerpo = $("#txt-cuerpo").val();
@@ -74,6 +85,7 @@ $(() => {
                                     <td>${item.id}</td>
                                     <td>${item.titulo}</td>
                                     <td>${item.cuerpo}</td>
+                                    <td><input class="verify" type="checkbox" id="check-${item.id}" data-id="${item.id}"></td>
                                 </tr>
                             `)
                         })
